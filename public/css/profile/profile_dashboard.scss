@@ -1,0 +1,185 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  width: 80%;
+  min-height: 50rem;
+  display: flex;
+  margin-top: 10rem;
+  box-shadow: -6px 7px 26px 0px rgba(0, 0, 0, 0.35);
+  flex-direction: column;
+}
+
+.accountbar {
+  padding: 1rem;
+  height: 4rem;
+  background-color: var(--color-Grey-light-1);
+  display: flex;
+  justify-content: space-between;
+
+  &__shortcut {
+    padding: 0 1rem;
+  }
+
+  input {
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    border: 1px solid var(--Grey-light-4);
+    width: 10%;
+    transition: all 0.5s ease-in-out;
+    background-color: var(--Grey-light-1);
+    &:focus {
+      width: 40%;
+    }
+  }
+
+  img {
+    margin: 0 1rem;
+    width: 30px;
+  }
+}
+
+.accountdetails {
+  display: flex;
+}
+.dashboard {
+  &__navbar {
+    .side-nav {
+      font-size: 1rem;
+      list-style: none;
+
+      &__item {
+        position: relative;
+        transition: all 0.2s 0.2s;
+        color: var(--Grey-dark-1);
+
+        &:not(:last-child) {
+          margin-bottom: 0.5rem;
+        }
+
+        &--active {
+          background-color: var(--color-primary);
+          color: var(--white);
+        }
+      }
+
+      &__item::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 3px;
+        background-color: var(--color-primary);
+        transform: scaleY(0);
+        transform-origin: center;
+        transition: transform 0.2s, width 0.2s 0.2s;
+      }
+
+      &__item:hover::before {
+        width: 100%;
+        transform: scaleY(1);
+      }
+
+      &__item:hover {
+        color: var(--white);
+      }
+
+      &__link:link,
+      &__link:visited {
+        color: var(--color-Grey-light-1);
+        text-decoration: none;
+        display: block;
+        padding: 1rem 3rem;
+        display: flex;
+        justify-content: start;
+        position: relative;
+        z-index: 10;
+      }
+
+      //   &__icon {
+      //     width: 2rem;
+      //     height: 2rem;
+      //     margin-right: 2rem;
+      //     fill: currentColor;
+      //   }
+    }
+  }
+
+  &__main {
+    background-color: var(--grey-lighter);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    .main {
+      &__profileinfo {
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        .pictureandbasic {
+          display: flex;
+          align-items: center;
+          padding: 3rem;
+
+          color: var(--Grey-dark-1);
+          img {
+            width: 100%;
+            border-radius: 100%;
+            border: none;
+          }
+
+          .info {
+            padding: 0 4rem;
+            display: flex;
+            flex-direction: column;
+            height: 15rem;
+            justify-content: space-evenly;
+            h2 {
+              font-size: 2rem;
+            }
+            h3 {
+              font-weight: 300;
+              letter-spacing: 0.3rem;
+            }
+          }
+        }
+
+        .branchandyear {
+          height: fit-content;
+          display: flex;
+          justify-content: space-around;
+          padding: 2rem;
+          background-color: var(--greyy-lightest);
+          .collegeinfo {
+            line-height: 1.2rem;
+            width: max-content;
+            display: flex;
+            // justify-content: space-evenly;
+            align-items: center;
+            color: var(--Grey-dark-2);
+            font-size: 0.8rem;
+
+            img {
+              width: 2rem;
+              margin: 0.5rem;
+            }
+
+            .batch {
+              width: 30rem;
+            }
+          }
+        }
+      }
+      &__detailedinfo {
+        height: 20rem;
+      }
+    }
+  }
+}
