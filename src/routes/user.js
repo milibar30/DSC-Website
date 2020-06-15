@@ -56,6 +56,9 @@ var rand,mailOptions,host,link;
 /*------------------SMTP Over-----------------------------*/
 
 /*------------------Routing Started ------------------------*/
+router.get("/new",(req,res)=>{
+    res.render("register");
+});
 
 router.get('/verify/:id',function(req,res){
 // console.log(req.protocol+":/"+req.get('host'));
@@ -172,14 +175,9 @@ router.get('/',(req,res)=>{
 });
 
 
-router.get("/newusermobile",(req,res)=>{
-    res.render("newusermobile");
-});
-
-
 //get route for signup
 router.get("/register",(req,res)=>{
-    res.render("newuser");
+    res.render("register");
 })
 
 //post route for signup
@@ -235,7 +233,7 @@ router.post("/register",
 
 //get route for login
 router.get("/login",function(req,res){
-    res.render("newuser");
+    res.render("register");
 });
 
 //post route for login
