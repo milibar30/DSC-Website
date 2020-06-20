@@ -24,3 +24,31 @@ function outsideClick(e) {
     modal.style.display = 'none';
   }
 }
+
+
+// Get DOM Elements
+const modal2 = document.querySelector('#my-modal2');
+const modalBtn2 = document.querySelector('#modal-btn2');
+const closeBtn2 = document.querySelector('.close2');
+
+// Events
+modalBtn2.addEventListener('click', openModal2);
+closeBtn2.addEventListener('click', closeModal2);
+window.addEventListener('click', outsideClick2);
+
+// Open
+function openModal2() {
+  modal2.style.display = 'block';
+}
+
+// Close
+function closeModal2() {
+  modal2.style.display = 'none';
+}
+
+// Close If Outside Click
+function outsideClick2(e) {
+  if (e.target == modal) {
+    modal2.style.display = 'none';
+  }
+}
