@@ -1,6 +1,6 @@
 :root {
     --modal-duration: 1s;
-    --modal-color: #428bca;
+    --modal-color: #f4f4f4;
 }
 
 /* body {
@@ -16,11 +16,11 @@
 
 .button {
     background: #428bca;
-    padding: 1em 2em ;
+    padding: 1em 2em;
     color: #fff;
     border: 0;
     margin-top: 100px;
-   
+
     height: 100px;
     border-radius: 5px;
     cursor: pointer;
@@ -58,7 +58,7 @@
 .modal-header {
     background: var(--modal-color);
     padding: 15px;
-    color: #fff;
+    color: rgba(0, 0, 0, 0.5);
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
@@ -78,7 +78,7 @@
 }
 
 .close {
-    color: #ccc;
+    color: rgba(0, 0, 0, 0.5);
     float: right;
     font-size: 30px;
     color: #fff;
