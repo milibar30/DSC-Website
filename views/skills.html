@@ -57,9 +57,11 @@
         padding-right: 5px;
         }
     </style>
+    <link rel="stylesheet" href="../public/css/profile/modal.css" />
 </head>
 
 <body>
+    <button id="modal-btn" class="button">Click Here</button>
     <div class="container">
         <section class="accountbar">
             <input type="text" placeholder="Search" />
@@ -122,6 +124,31 @@
 
         </section>
     </div>
+
+
+    
+
+    <div id="my-modal" class="modal"> 
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Modal Header</h2>
+            </div>
+            <div class="modal-body">
+                <p>This is my modal</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla repellendus nisi, sunt consectetur
+                    ipsa velit
+                    repudiandae aperiam modi quisquam nihil nam asperiores doloremque mollitia dolor deleniti quibusdam
+                    nemo
+                    commodi ab.</p>
+            </div>
+            <div class="modal-footer">
+                <h3>Modal Footer</h3>
+            </div>
+        </div>
+    </div> 
+
+    <script src="../public/js/profile/modal.js"></script>
 </body>
 <script src="../node_modules/a11ytab/dist/a11ytab.js"></script>
 <script src="../public/js/profile/profile.js"></script>
