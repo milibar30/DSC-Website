@@ -104,7 +104,7 @@
   transition: all 0.5s;
 }
 
- .RegisterModal{
+ /* .RegisterModal{
   opacity: 100;
   width: 40%;
   border: 1px solid;
@@ -122,7 +122,7 @@
   display: flex;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-} 
+}  */
 
 .addExperienceModal {
   border: 1px solid;
@@ -157,14 +157,14 @@
   .backPart {
     width: 10% !important;
   }
-  .RegisterModal{
+  /* .RegisterModal{
     top: 50%;
     width: 35%;
     position: absolute;
     overflow: auto;
     font-size: 0.8rem !important;
     height: auto;
-  }
+  } */
   .editProfileModal,
   .addSkillsModal,
   .addAchievementModal,
@@ -188,7 +188,6 @@
   .addAchievementModal,
   .addExperienceModal,
   .addProjectsModal,
-  .RegisterModal,
   .addSkillsModal .backPart {
     width: 100% !important;
   }
@@ -196,7 +195,7 @@
   .addSkillsModal,
   .addAchievementModal,
   .addProjectsModal,
-  .addExperienceModal,.RegisterModal {
+  .addExperienceModal {
     top: 0%;
     left: 0%;
     -webkit-transform: translate(0%, 80px);
@@ -219,7 +218,6 @@
   .addAchievementModal,
   .addExperienceModal,
   .addProjectsModal,
-  .RegisterModal,
   .addSkillsModal #subscribeBox {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -276,7 +274,6 @@
 } */
 
 .editProfileModal label,
-.RegisterModal label,
 .addExperienceModal label,
 .addProjectsModal label,
 .addAchievementModal label,
@@ -290,9 +287,6 @@
 .editProfileModal input,
 .editProfileModal textarea,
 .editProfileModal select,
-.RegisterModal input,
-.RegisterModal textarea,
-.RegisterModal select,
 .addExperienceModal input,
 .addExperienceModal textarea,
 .addExperienceModal select,
@@ -326,9 +320,6 @@
 .addExperienceModal input option,
 .addExperienceModal textarea option,
 .addExperienceModal select option,
-.RegisterModal input option,
-.RegisterModal textarea option,
-.RegisterModal select option,
 .addProjectsModal input option,
 .addProjectsModal textarea option,
 .addProjectsModal select option,
@@ -347,9 +338,6 @@
 .addExperienceModal input:focus,
 .addExperienceModal textarea:focus,
 .addExperienceModal select:focus,
-.RegisterModal input:focus,
-.RegisterModal textarea:focus,
-.RegisterModal select:focus,
 .addProjectsModal input:focus,
 .addProjectsModal textarea:focus,
 .addProjectsModal select:focus,
@@ -364,7 +352,6 @@
 
 .editProfileModal select,
 .addExperienceModal select,
-.RegisterModal select,
 .addProjectsModal select,
 .addAchievementModal select,
 .addSkillsModal select {
@@ -373,7 +360,6 @@
 
 .editProfileModal .fullwidth,
 .addExperienceModal .fullwidth,
-.RegisterModal .fullwidth,
 .addProjectsModal .fullwidth,
 .addAchievementModal .fullwidth,
 .addSkillsModal .fullwidth {
@@ -383,7 +369,6 @@
 
 .editProfileModal .fullwidth a,
 .addExperienceModal .fullwidth a,
-.RegisterModal .fullwidth a,
 .addProjectsModal .fullwidth a,
 .addAchievementModal .fullwidth a,
 .addSkillsModal .fullwidth a {
@@ -394,7 +379,6 @@
 .editProfileModal input[type="checkbox"],
 .addExperienceModal input[type="checkbox"],
 .addProjectsModal input[type="checkbox"],
-.RegisterModal input[type="checkbox"],
 .addAchievementModal input[type="checkbox"],
 .addSkillsModal input[type="checkbox"] {
   visibility: hidden;
@@ -402,7 +386,6 @@
 
 .editProfileModal #checkbox,
 .addExperienceModal #checkbox,
-.RegisterModal #checkbox,
 .addProjectsModal #checkbox,
 .addAchievementModal #checkbox,
 .addSkillsModal #checkbox {
@@ -417,7 +400,6 @@
 
 .editProfileModal .customCheck,
 .addExperienceModal .customCheck,
-.RegisterModal .customCheck,
 .addProjectsModal .customCheck,
 .addAchievementModal .customCheck,
 .addSkillsModal .customCheck {
@@ -429,7 +411,6 @@
 
 .editProfileModal .customCheck label,
 .addExperienceModal .customCheck label,
-.RegisterModal .customCheck label,
 .addProjectsModal .customCheck label,
 .addAchievementModal .customCheck label,
 .addSkillsModal .customCheck label {
@@ -446,7 +427,6 @@
 .editProfileModal .customCheck label:after,
 .addExperienceModal .customCheck label:after,
 .addProjectsModal .customCheck label:after,
-.RegisterModal .customCheck label:after,
 .addAchievementModal .customCheck label:after,
 .addSkillsModal .customCheck label:after {
   opacity: 0.2;
@@ -467,7 +447,6 @@
 .editProfileModal .customCheck label:hover::after,
 .addExperienceModal .customCheck label:hover::after,
 .addProjectsModal .customCheck label:hover::after,
-.RegisterModal .customCheck label:hover::after,
 .addAchievementModal .customCheck label:hover::after,
 .addSkillsModal .customCheck label:hover::after {
   opacity: 0.5;
@@ -475,7 +454,6 @@
 
 .editProfileModal .customCheck input[type="checkbox"]:checked + label:after,
 .addExperienceModal .customCheck input[type="checkbox"]:checked + label:after,
-.RegisterModal .customCheck input[type="checkbox"]:checked + label:after,
 .addProjectsModal .customCheck input[type="checkbox"]:checked + label:after,
 .addAchievementModal .customCheck input[type="checkbox"]:checked + label:after,
 .addSkillsModal .customCheck input[type="checkbox"]:checked + label:after {
@@ -484,7 +462,6 @@
 
 .editProfileModal .robot,
 .addExperienceModal .robot,
-.RegisterModal .robot,
 .addProjectsModal .robot,
 .addAchievementModal .robot,
 .addSkillsModal .robot {
@@ -497,7 +474,6 @@
 
 .editProfileModal .submit,
 .addExperienceModal .submit,
-.RegisterModal .submit,
 .addProjectsModal .submit,
 .addAchievementModal .submit,
 .addSkillsModal .submit {
@@ -521,7 +497,6 @@
 
 .editProfileModal .submit:hover,
 .addExperienceModal .submit:hover,
-.RegisterModal .submit:hover,
 .addProjectsModal .submit:hover,
 .addAchievementModal .submit:hover,
 .addSkillsModal .submit:hover {
@@ -531,7 +506,6 @@
 
 .editProfileModal .wrapper,
 .addExperienceModal .wrapper,
-.RegisterModal .wrapper,
 .addProjectsModal .wrapper,
 .addAchievementModal .wrapper,
 .addSkillsModal .wrapper {
@@ -548,7 +522,6 @@
 
 .editProfileModal .backPart,
 .addExperienceModal .backPart,
-.RegisterModal .backPart,
 .addProjectsModal .backPart,
 .addAchievementModal .backPart,
 .addSkillsModal .backPart {
@@ -561,8 +534,6 @@
 .editProfileModal .backPart .backlogo1,
 .addExperienceModal .backPart .backlogo,
 .addExperienceModal .backPart .backlogo1,
-.RegisterModal .backPart .backlogo,
-.RegisterModal .backPart .backlogo1,
 .addProjectsModal .backPart .backlogo,
 .addProjectsModal .backPart .backlogo1,
 .addAchievementModal .backPart .backlogo,
@@ -576,7 +547,6 @@
 
 .editProfileModal #subscribeBox,
 .addExperienceModal #subscribeBox,
-.RegisterModal #subscribeBox,
 .addAchievementModal #subscribeBox,
 .addSkillsModal #subscribeBox {
   position: relative;
@@ -598,7 +568,6 @@
 
 .editProfileModal *:focus,
 .addExperienceModal *:focus,
-.RegisterModal *:focus,
 .addProjectsModal *:focus,
 .addAchievementModal *:focus,
 .addSkillsModal *:focus {
@@ -607,7 +576,6 @@
 
 .editProfileModal .subscribeForm,
 .addExperienceModal .subscribeForm,
-.RegisterModal .subscribeForm,
 .addProjectsModal .subscribeForm,
 .addAchievementModal .subscribeForm,
 .addSkillsModal .subscribeForm {
@@ -617,7 +585,6 @@
 
 .editProfileModal .thin,
 .addExperienceModal .thin,
-.RegisterModal .thin,
 .addProjectsModal .thin,
 .addAchievementModal .thin,
 .addSkillsModal .thin {
@@ -626,7 +593,6 @@
 
 .editProfileModal .upload-btn-wrapper input,
 .addExperienceModal .upload-btn-wrapper input,
-.RegisterModal .upload-btn-wrapper input,
 .addProjectsModal .upload-btn-wrapper input,
 .addAchievementModal .upload-btn-wrapper input,
 .addSkillsModal .upload-btn-wrapper input {
@@ -635,7 +601,6 @@
 
 .editProfileModal .upload-btn-wrapper input[type="file"],
 .addExperienceModal .upload-btn-wrapper input[type="file"],
-.RegisterModal .upload-btn-wrapper input[type="file"],
 .addProjectsModal .upload-btn-wrapper input[type="file"],
 .addAchievementModal .upload-btn-wrapper input[type="file"],
 .addSkillsModal .upload-btn-wrapper input[type="file"] {
@@ -651,7 +616,6 @@
 
 .editProfileModal .socials,
 .addExperienceModal .socials,
-.RegisterModal .socials,
 .addProjectsModal .socials,
 .addAchievementModal .socials,
 .addSkillsModal .socials {
